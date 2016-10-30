@@ -1,9 +1,8 @@
 const jsf = require('json-schema-faker')
-const schema = require('../artefact/schema');
+const schema = require('../models/artefact/schema');
 const fakerDecorate = require('./decorate');
 const { merge } = require('lodash');
-
-const { display } = require('./utils') 
+const { display } = require('../utils') 
 
 // twistedSchema allows override of one or more property fakers to suit specific scenario, 
 // such as when simulating a special kind of search for the fake adapter etc. 
