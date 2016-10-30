@@ -5,5 +5,5 @@ const organisation = require('./organisation')
 module.exports = {
   artefact,
   user,
-  organisation  
+  organisation
 }

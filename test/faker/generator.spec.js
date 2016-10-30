@@ -7,7 +7,7 @@ const generate = generatorFor('component');
 const createValidator = require('../../validator').request;
 
 test('Faker')
-  .that('generator')            
+  .that('generator')
     .will('generate a valid component', async () => {
       let artefact = await generate();
 
@@ -18,9 +18,9 @@ test('Faker')
         }
       })
 
-      display(artefact);   
+      display(artefact);
 
       check.validation(validator).for(artefact)
-        .isValid();       
+        .isValid();
     })
     .run();

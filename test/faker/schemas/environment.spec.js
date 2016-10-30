@@ -4,7 +4,7 @@
 require('babel-core/register');
 require('babel-polyfill');
 
-const schema = require('../../../../../adapters/fake/faker/schemas/environment')
+const schema = require('../../').models.domain.schema;
 
 function display(obj) {
   return JSON.stringify(obj, null, 2)
