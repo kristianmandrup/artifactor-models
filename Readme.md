@@ -7,34 +7,24 @@ the [Artifactor Adapters](https://github.com/kristianmandrup/artifactor-adapters
 
 `npm i artifactor-models --save`
 
-### Build
-TODO: Webpack
+## Development environment
 
-`npm run build` - builds `/src` folder and puts resulting ES5 `.js` files in `/dist`
-
-### Auto build
-TODO: Webpack
-
-`npm run watch` - builds `/src` and watches for changes to `/src` files for auto-build!
-
-### Run
-TODO: Webpack
-
-- `$ npm start` or `$ npm koa` - start the server
-
-### Troubleshooting
-
-If you still get an error, try removing the `dist` folder:
-
-`rm -r dist`
-
-Then recompile via `build` or `watch` task and start server again.
+Please see the `docs` folder, in particular `docs/env-setup/library-dev.md` 
+which describes the full development environment, how it was configured etc.
 
 ### Run Test or Test suite
 
 `npm test`
 
-Using [mocha-test-dsl](https://www.npmjs.com/package/mocha-test-dsl) for writing tests.
+Write tests using either:
+- [ava](https://github.com/ava/ava)
+- or [mocha-test-dsl](https://www.npmjs.com/package/mocha-test-dsl) if you prefer using [mocha]
+
+Note that Ava can use `spec` syntax via [ava-spec]()
+
+- Ava testing framework: [ava](https://github.com/ava/ava)
+- BDD: [ava-spec](https://www.npmjs.com/package/ava-spec)
+- test doubles: [testdouble.js]()
 
 ### Models
 
@@ -45,7 +35,7 @@ The models are defined in `src/models`. We currently have the following domain m
 - `Organisation`
 - ???
 
-The [artifactor-payments]() will introduce `Account`.
+The [artifactor-payments]() repo/module will introduce/add the `Account` model.
 
 We need a way to store which artifacts are used with which other artifacts and how often they are used in combination, in order to suggest popular artifacts for each artifact (like typical Amazon/Netflix shopping/browsing experience).
 
