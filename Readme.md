@@ -1,5 +1,7 @@
 # Artifactor Models
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/artifactor-models.svg?token=eb1fe56bae1c11863f193fd8618bb0a774cc83f098aead456e12d4726960dd22)](https://greenkeeper.io/)
+
 This *Artifactor Models* contains the base models and fakers used by 
 the [Artifactor Adapters](https://github.com/kristianmandrup/artifactor-adapters)
 
